@@ -1,21 +1,33 @@
-# Multi-AudioJail: Multilingual and Multi-Accent Jailbreaking of Audio LLMs
+# Multilingual and Multi-Accent Jailbreaking of Audio LLMs
 
-**Published as a conference paper at COLM 2025**
 
-**Authors:** Jaechul Roh<sup>1</sup>, Virat Shejwalkar<sup>2</sup>, and Amir Houmansadr<sup>1</sup>
+This is the official repository of "[Multilingual and Multi-Accent Jailbreaking of Audio LLMs]([https://arxiv.org/abs/2510.04201](https://arxiv.org/pdf/2504.01094?))". 
 
-<sup>1</sup>University of Massachusetts Amherst, <sup>2</sup>Google DeepMind
+Our paper has been **published at COLM 2025 🎉**
 
+> **Multilingual and Multi-Accent Jailbreaking of Audio LLMs** <br>
+> Jaechul Roh<sup>1</sup>, Virat Shejwalkar<sup>2</sup>, Amir Houmansadr<sup>2</sup>
+> <br>
+> <sup>1</sup>University of Massachusetts Amherst, <sup>2</sup>Google DeepMind <br>
+>
+> **Abstract.** Large Audio Language Models (LALMs) have significantly advanced audio
+understanding but introduce critical security risks, particularly throughaudio jailbreaks. While prior work has focused on English-centric attacks,
+we expose a far more severe vulnerability: adversarial multilingual and multiaccent audio jailbreaks, where linguistic and acoustic variations dramatically
+amplify attack success. In this paper, we introduce MULTI-AUDIOJAIL, the
+first systematic framework to exploit these vulnerabilities through (1) a
+novel dataset of adversarially perturbed multilingual/multi-accent audio
+jailbreaking prompts, and (2) a hierarchical evaluation pipeline revealing
+that how acoustic perturbations (e.g., reverberation, echo, and whisper
+effects) interacts with cross-lingual phonetics to cause jailbreak success
+rates (JSRs) to surge by up to +57.25 percentage points (e.g., reverberated
+Kenyan-accented attack on MERaLiON). Crucially, our work further reveals that multimodal LLMs are inherently more vulnerable than unimodal
+systems: attackers need only exploit the weakest link (e.g., non-English
+audio inputs) to compromise the entire model, which we empirically show
+by multilingual audio-only attacks achieving 3.1× higher success ratesthan text-only attacks. We plan to release our dataset to spur research into
+cross-modal defenses, urging the community to address this expanding
+attack surface in multimodality as LALMs evolve.
+> 
 ![Multi-AudioJail Framework](fig/figure_1.png)
-
-## Abstract
-
-Large Audio Language Models (LALMs) have significantly advanced audio understanding but introduce critical security risks, particularly through audio jailbreaks. While prior work has focused on English-centric attacks, we expose a far more severe vulnerability: **adversarial multilingual and multi-accent audio jailbreaks**, where linguistic and acoustic variations dramatically amplify attack success. In this paper, we introduce **MULTI-AUDIOJAIL**, the first systematic framework to exploit these vulnerabilities through:
-
-1. A novel dataset of adversarially perturbed multilingual/multi-accent audio jailbreaking prompts
-2. A hierarchical evaluation pipeline revealing how acoustic perturbations (e.g., reverberation, echo, and whisper effects) interact with cross-lingual phonetics to cause jailbreak success rates (JSRs) to surge by up to **+57.25 percentage points**
-
-Crucially, our work reveals that multimodal LLMs are inherently more vulnerable than unimodal systems: attackers need only exploit the weakest link (e.g., non-English audio inputs) to compromise the entire model, which we empirically show by multilingual audio-only attacks achieving **3.1× higher success rates** than text-only attacks.
 
 ## Key Findings
 
@@ -100,12 +112,6 @@ def simulate_whisper(input_audio, output_audio, reduction_factor=0.3):
 ### Natural vs. Synthetic Accents
 - **Natural accents**: Average JSR ~2.54% (baseline), up to 35.39% with perturbations
 - **Synthetic accents**: Average JSR ~11.42% (baseline), up to 34.74% with perturbations
-
-## Requirements
-
-```bash
-pip install torch transformers librosa tqdm pandas soundfile scipy
-```
 
 ## Usage
 
