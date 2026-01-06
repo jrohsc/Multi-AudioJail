@@ -6,7 +6,7 @@
 
 <sup>1</sup>University of Massachusetts Amherst, <sup>2</sup>Google DeepMind
 
-![Multi-AudioJail Framework](fig/figure_1.pdf)
+![Multi-AudioJail Framework](fig/figure_1.png)
 
 ## Abstract
 
