@@ -135,7 +135,7 @@ Multi-AudioJail/
 │   ├── advbench_en_reverb/ # Reverberated adversarial samples
 │   └── advbench.csv        # Text prompts corresponding to audio
 ├── fig/
-│   └── figure_1.pdf        # Framework overview figure
+│   └── figure_1.png        # Framework overview figure
 └── README.md
 ```
 
