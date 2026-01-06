@@ -1,10 +1,10 @@
 # Multilingual and Multi-Accent Jailbreaking of Audio LLMs
 
+![Multi-AudioJail Framework](fig/figure_1.png)
+
 This is the official repository of "[Multilingual and Multi-Accent Jailbreaking of Audio LLMs]([https://arxiv.org/abs/2510.04201](https://arxiv.org/pdf/2504.01094?))". 
 
 Our paper has been **published at COLM 2025 🎉**
-
-![Multi-AudioJail Framework](fig/figure_1.png)
 
 > **Multilingual and Multi-Accent Jailbreaking of Audio LLMs** <br>
 > Jaechul Roh<sup>1</sup>, Virat Shejwalkar<sup>2</sup>, Amir Houmansadr<sup>2</sup>
