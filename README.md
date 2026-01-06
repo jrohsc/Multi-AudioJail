@@ -1,9 +1,10 @@
 # Multilingual and Multi-Accent Jailbreaking of Audio LLMs
 
-
 This is the official repository of "[Multilingual and Multi-Accent Jailbreaking of Audio LLMs]([https://arxiv.org/abs/2510.04201](https://arxiv.org/pdf/2504.01094?))". 
 
 Our paper has been **published at COLM 2025 🎉**
+
+![Multi-AudioJail Framework](fig/figure_1.png)
 
 > **Multilingual and Multi-Accent Jailbreaking of Audio LLMs** <br>
 > Jaechul Roh<sup>1</sup>, Virat Shejwalkar<sup>2</sup>, Amir Houmansadr<sup>2</sup>
@@ -27,7 +28,7 @@ by multilingual audio-only attacks achieving 3.1× higher success ratesthan text
 cross-modal defenses, urging the community to address this expanding
 attack surface in multimodality as LALMs evolve.
 > 
-![Multi-AudioJail Framework](fig/figure_1.png)
+
 
 ## Key Findings
 
