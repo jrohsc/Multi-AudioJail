@@ -1,7 +1,9 @@
 # Multi-AudioJail: Multilingual and Multi-Accent Jailbreaking of Audio LLMs
 
 **Published as a conference paper at COLM 2025**
+
 **Authors:** Jaechul Roh<sup>1</sup>, Virat Shejwalkar<sup>2</sup>, and Amir Houmansadr<sup>1</sup>
+
 <sup>1</sup>University of Massachusetts Amherst, <sup>2</sup>Google DeepMind
 
 ![Multi-AudioJail Framework](fig/figure_1.png)
